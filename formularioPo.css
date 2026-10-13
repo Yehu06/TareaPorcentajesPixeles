@@ -1,0 +1,76 @@
+/**
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+
+
+html {
+    background-color: bisque;
+    width: 1200px;   /* base=100% para el form */
+    margin:auto;
+
+}
+
+body
+{
+    background-color: aliceblue;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+form {
+    background-color: blanchedalmond;
+    /* Base: 1200px = 100% */
+    width: 30.66666666666667%;        /* 368×100/1200 */ /*368 es el ancho del formulario y 1200 le del html*/
+    margin: 1.666666666666667% auto;   /* 20×100/1200 */
+    padding: 1.25%;           /* 15×100/1200 */
+    border-radius: 15px;     /* 15×100/400 (ancho total del form) */
+    border: 1px solid black;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    display: inline-block;
+    /* Base: 368px = 100% (contenido del form) */
+    margin-bottom: 2.717391304347826%; /* 10×100/368 */
+
+    /*Los labels usas el comportamiento del inline blok ya que no tienen withd, osea el ancho resultante del texto del label*/
+}
+
+input[type="text"],
+textarea {
+    width: 54.34782608695652%;        /* 200×100/368 */ /*200px es el ancho del withd de el textarea y el contenedor padre es el witdh de 368px del form*/
+    padding: 2.173913043478261%;       /* 8×100/368 */
+    border: 1px solid #888;
+    margin-bottom: 4.076086956521739%; /* 15×100/368 */
+    font-family: inherit;
+}
+
+textarea {
+    height: 80px; /* height en % no funciona con un padre en auto */
+}
+
+button,
+input[type="submit"] {
+    width: 26.6304347826087%;        /* 98×100/368 *//*98px es el ancho del withd de el input submit y el contenedor padre es el witdh de 368px del form*/
+    padding: 2.717391304347826%;       /* 10×100/368 */
+    margin-top: 2.717391304347826%;    /* 10×100/368 */
+    background-color: #d2b48c;
+    border: 1px solid black;
+    border-radius: 4.166666666666667%; /* 5×100/120 (ancho total del botón) */
+}
+
+input[type="checkbox"] {
+    width: 4.347826086956522%;         /* 16×100/368*//*16px es el ancho del withd de el input checkbox y el contenedor padre es el witdh de 368px del form*/
+    margin-bottom: 2.717391304347826%; /* 10×100/368 */
+    margin-left: 2.717391304347826%;   /* 10×100/368 */
+    height: 16px;
+    display: inline-block;
+}

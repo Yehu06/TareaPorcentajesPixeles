@@ -1,0 +1,63 @@
+
+
+
+html {
+    background-color: bisque;
+    width: 1200px;   /* base=100% para el form */
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+   /* box-sizing: border-box;*/
+    background-color: blanchedalmond;
+    /* Ancho total en pantalla = 368 + 30 (padding) + 2 (borde) = 400px */
+    width: 368px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+textarea {
+    /* 220px - 16px (padding izq+der) - 2px (borde izq+der) = 202px */
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #888;
+    margin-bottom: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    height: 80px;
+}
+
+button,
+input[type="submit"] {
+    /* Botón de 120px de ancho total: 120px - 20px (padding) - 2px (borde) = 98px */
+    width: 98px;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d2b48c;
+    border: 1px solid black;
+    border-radius: 5px;
+   
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height: 16px;
+    display: inline-block;
+}
